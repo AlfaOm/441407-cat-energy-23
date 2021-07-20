@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Александр Фатькин](https://up.htmlacademy.ru/adaptive/23/user/441407).
-* Наставник: `Неизвестно`.
+* Наставник: `Дмитрий Иовлев`(https://htmlacademy.ru/profile/skywalker).
 
 ---
 
