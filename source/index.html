@@ -13,10 +13,7 @@
 
     <div class="page-header__logo">
       <a class="page-header__logo-icon">
-        <img src="img/svg/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Кэт энэрджи">
-      </a>
-      <a class="page-header__logo-text">
-        <img src="img/svg/logo-text.svg" width="101" height="18" alt="Название магазина Кэт энэрджи">
+        <img src="img/svg/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энэрджи">
       </a>
     </div>
 
@@ -26,17 +23,17 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
+          <li class="main-nav__item main-nav__item--bold main-nav__item--current">
             <a>
               Главная
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--bold">
             <a href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--bold">
             <a href="form.html">
               Подбор программы
             </a>
@@ -52,15 +49,17 @@
 
     <h1 class="visually-hidden">Кэт энэрджи - интернет-магазин функционального питания для котов</h1>
 
-    <section class="preview">
-      <div class="preview__wrapper">
-        <h2 class="preview__title">
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h2 class="promo__title heading-secondary heading-primary--m-white">
           Функциональное питание для котов
         </h2>
-        <p class="preview__slogan">
+        <p class="promo__slogan promo__slogan--m-white">
           Занялся собой? Займись котом!
         </p>
-        <a class="preview__button button" href="form.html">
+        <img class="promo__image" src="img/promo-mobile.png" width="280" height="270"
+          alt="Изображение товара со вкусом курицы в упаковке из стаканчика желто-оранжевой расцветки">
+        <a class="promo__button button" href="form.html">
           Подобрать программу
         </a>
       </div>
@@ -70,8 +69,6 @@
 
     <section class="select-programm">
       <h3 class="select-programm__title">Похудение</h3>
-      <img class="select-programm__icon" src="#" width="50" height="53"
-        alt="Иконка с черным силуэтом стройной сидячей кошки на фоне зеленого круга">
       <p class="select-programm__description">
         Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
         поможет вашему питомцу сбросить лишний вес.
@@ -82,8 +79,6 @@
     </section>
     <section class="select-programm">
       <h3 class="select-programm__title">Набор массы</h3>
-      <img class="select-programm__icon" src="#" width="67" height="50"
-        alt="Иконка с черным силуэтом, идущей дикой кошкой, на фоне зеленого круга">
       <p class="select-programm__description">
         Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
         необходимые мышцы!
@@ -97,7 +92,7 @@
 
     <section class="application">
       <div class="application__wrapper">
-        <h2 class="application__title">
+        <h2 class="application__title heading-secondary">
           Как это работает
         </h2>
         <ul class="application__list">
@@ -129,29 +124,21 @@
 
     <section class="result">
       <div class="result__wrapper">
-        <h2 class="result__title">Живой пример</h2>
+        <h2 class="result__title heading-secondary">Живой пример</h2>
         <p class="result__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
           изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <dl class="result__list">
-          <div class="result__item">
-            <dt class="result__number-item">
-              5 кг
-            </dt>
-            <dd class="result__description-item">
-              Снижение веса
-            </dd>
-          </div>
-          <div class="result__item">
-            <dt class="result__number-item">
-              60 дней
-            </dt>
-            <dd class="result__description-item">
-              Затрачено времени
-            </dd>
-          </div>
-        </dl>
+        <ul class="result__list">
+          <li class="result__item">
+            <p class="result__item-info">5 кг</p>
+            <p class="result__item-info-caption">Снижение веса</p>
+          </li>
+          <li class="result__item">
+            <p class="result__item-info">60 дней</p>
+            <p class="result__item-info-caption">Затрачено времени</p>
+          </li>
+        </ul>
         <div class="result__total">
           <p class="result__total-text">Затраты на питание: <span class="result__total-price">15 000 руб.</span></p>
         </div>
@@ -176,7 +163,10 @@
       <h2 class="visually-hidden">Контакты для дилеров</h2>
       <div class="contacts__wrapper">
         <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <address class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8 <span class="contacts__address--city">Санкт-Петербург</span>
+        </address>
+
       </div>
     </section>
 
@@ -186,7 +176,8 @@
       <h2 class="visually-hidden">Адрес офиса на карте</h2>
       <div class="map__wrapper">
         <a class="map__image" target="_blank" href="https://yandex.ru/maps/-/CCQhQVUJwB">
-          <img src="#" alt="Адрес офиса: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img src="img/map-mobile.png" width="320" height="362"
+            alt="Адрес офиса: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </a>
       </div>
     </section>
@@ -208,17 +199,17 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              Мы в Вконтакте
+              <span class="visually-hidden">Мы в Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              Мы в Инстаграме
+              <span class="visually-hidden">Мы в Инстаграме</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              Мы в Фейсбуке
+              <span class="visually-hidden">Мы в Фейсбуке</span>
             </a>
           </li>
         </ul>
