@@ -1,0 +1,50 @@
+.application {
+  // width: 279px;
+  margin-bottom: 42px;
+}
+
+.application__wrapper {
+  padding-right: 21px;
+  padding-left: 20px;
+}
+
+.application__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.application__list {
+  margin: 0;
+  padding: 0;
+  width: 278px;
+  list-style: none;
+}
+
+.application__item {
+  position: relative;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 60px;
+    height: 60px;
+    background-color: @basic-green;
+  }
+
+  &--leaf {
+    background-image: url("../../img/svg/leaf.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.application__description {
+  padding-left: 75px;
+  font-family: "Arial", "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: @special_dark-grey;
+}
