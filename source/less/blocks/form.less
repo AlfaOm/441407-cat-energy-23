@@ -17,13 +17,13 @@
   margin-bottom: 23px;
   padding: 0;
   border: none;
-}
 
-.form .form__field:nth-child(3) {
-  padding-top: 22px;
-  padding-bottom: 19px;
-  border-top: 1px solid @spesial-grey-3;
-  border-bottom: 1px solid @spesial-grey-3;
+  &--border {
+    padding-top: 22px;
+    padding-bottom: 19px;
+    border-top: 1px solid @spesial-grey-3;
+    border-bottom: 1px solid @spesial-grey-3;
+  }
 }
 
 .form__field-legend {
@@ -32,6 +32,24 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
+}
+
+.form__input-wrapper,
+.form__radio-wrapper,
+.form__checkbox-wrapper {
+  margin: 0;
+}
+
+.form__input-wrapper:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.form__radio-wrapper:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.form__checkbox-wrapper:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .form__label,
