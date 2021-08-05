@@ -5,6 +5,7 @@
 }
 
 .form__title {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -25,8 +26,17 @@
   border-bottom: 1px solid @spesial-grey-3;
 }
 
+.form__field-legend {
+  margin-bottom: 35px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+}
+
 .form__label,
 .form__input {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: @special_dark-grey;
@@ -61,12 +71,10 @@
     outline: none;
     border: 2px solid @special_dark-grey;
   }
-}
 
-.form__field-legend {
-  margin-bottom: 35px;
-  font-size: 24px;
-  line-height: 26px;
+  &::placeholder {
+    color: @special_dark-grey;
+  }
 }
 
 .form__textarea {
@@ -74,6 +82,11 @@
   padding-right: 12px;
   padding-bottom: 9px;
   padding-left: 12px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
   text-transform: uppercase;
   border: 1px solid @special-border-input;
 
@@ -89,6 +102,10 @@
     outline: none;
     border: 2px solid @special_dark-grey;
   }
+
+  &::placeholder {
+    color: @special_dark-grey;
+  }
 }
 
 .form__button {
@@ -102,8 +119,6 @@
 }
 
 .form__obligatory {
-  font-family: "Arial", "Oswald", sans-serif;
-  font-size: 14px;
   line-height: 16px;
   text-align: center;
 }
