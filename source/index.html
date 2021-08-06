@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -45,7 +46,7 @@
 
   <!-- Основное содержание -->
 
-  <main class="page-main">
+  <main class="page-main center">
 
     <h1 class="visually-hidden">Кэт энэрджи - интернет-магазин функционального питания для котов</h1>
 
@@ -59,33 +60,39 @@
         </p>
         <img class="promo__image" src="img/promo-mobile.png" width="280" height="270"
           alt="Изображение товара со вкусом курицы в упаковке из стаканчика желто-оранжевой расцветки">
-        <a class="promo__button button" href="form.html">
-          Подобрать программу
-        </a>
+        <p class="promo__button-wrapper">
+          <a class="promo__button button" href="form.html">
+            Подобрать программу
+          </a>
+        </p>
       </div>
     </section>
 
     <!-- Программы питания -->
 
-    <section class="select-programm">
-      <h3 class="select-programm__title">Похудение</h3>
-      <p class="select-programm__description">
-        Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
-        поможет вашему питомцу сбросить лишний вес.
-      </p>
-      <a class="select-programm__link" href="#">
-        Каталог slim
-      </a>
+    <section class="select-programm select-programm--image-skinny">
+      <div class="select-programm__wrapper">
+        <h3 class="select-programm__title">Похудение</h3>
+        <p class="select-programm__description">
+          Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
+          поможет вашему питомцу сбросить лишний вес.
+        </p>
+        <a class="select-programm__link" href="#">
+          Каталог slim
+        </a>
+      </div>
     </section>
-    <section class="select-programm">
-      <h3 class="select-programm__title">Набор массы</h3>
-      <p class="select-programm__description">
-        Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
-        необходимые мышцы!
-      </p>
-      <a class="select-programm__link" href="#">
-        Каталог pro
-      </a>
+    <section class="select-programm select-programm--image-weight">
+      <div class="select-programm__wrapper">
+        <h3 class="select-programm__title">Набор массы</h3>
+        <p class="select-programm__description">
+          Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
+          необходимые мышцы!
+        </p>
+        <a class="select-programm__link" href="#">
+          Каталог pro
+        </a>
+      </div>
     </section>
 
     <!-- Описание работы программы питания -->
@@ -132,7 +139,7 @@
         <ul class="result__list">
           <li class="result__item">
             <p class="result__item-info">5 кг</p>
-            <p class="result__item-info-caption">Снижение веса</p>
+            <p class="result__item-info-caption">Снижение <br>веса</p>
           </li>
           <li class="result__item">
             <p class="result__item-info">60 дней</p>
@@ -140,19 +147,21 @@
           </li>
         </ul>
         <div class="result__total">
-          <p class="result__total-text">Затраты на питание: <span class="result__total-price">15 000 руб.</span></p>
-        </div>
-        <div class="result__image">
-          <div class="result__image-before">
-            <img src="img/cat-before.png" width="311" height="232" alt="Изображение упитанного кота">
-          </div>
-          <div class="result__image-after">
-            <img src="img/cat-after.png" width="251" height="240" alt="Изображение худого кота">
-          </div>
-          <p class="result__toggles">
-            <button class="result__toggle-before">Было</button>
-            <button class="result__toggle-after">Стало</button>
+          <p class="result__total-text">
+            Затраты на питание: <span class="result__total-price">15 000 руб.</span>
           </p>
+        </div>
+      </div>
+      <div class="result__image">
+        <div class="result__image-before">
+          <img src="img/cat-before.png" width="311" height="232" alt="Изображение упитанного кота">
+        </div>
+        <div class="result__image-after">
+          <img src="img/cat-after.png" width="251" height="240" alt="Изображение худого кота">
+        </div>
+        <div class="result__toggles">
+          <button class="result__toggle-before">Было</button>
+          <button class="result__toggle-after">Стало</button>
         </div>
       </div>
     </section>
