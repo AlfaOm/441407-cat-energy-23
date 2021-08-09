@@ -6,10 +6,21 @@
   background-color: @basic-grey;
 }
 
+.page-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .page-footer__logo-text {
   padding-bottom: 32px;
   text-align: center;
   border-bottom: 1px solid @spesial-grey-3;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .page-footer__copyright {
@@ -17,4 +28,10 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+    gap: 22px;
+    padding: 0;
+  }
 }
