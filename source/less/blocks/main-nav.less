@@ -1,15 +1,18 @@
 .main-nav {
   position: relative;
-  // margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    width: 440px;
-  }
 
   @media (min-width: @desktop-width) {
-    width: 480px;
+    text-align: right;
     background: transparent;
   }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -25px;
+  right: 20px;
+  width: 24px;
+  height: 16px;
 }
 
 .main-nav__wrapper {
@@ -36,13 +39,12 @@
 
 .main-nav__site-list {
   @media (min-width: @tablet-width) {
-    flex-wrap: wrap;
-    width: 440px;
+    // flex-wrap: wrap;
+    // width: 440px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 480px;
-    background: transparent;
+    // width: 480px;
   }
 }
 
@@ -53,7 +55,6 @@
   border-top: 1px solid @special-grey-2;
 
   @media (min-width: @tablet-width) {
-    // margin-right: 35px;
     padding: 0;
     border: none;
   }

@@ -1,17 +1,15 @@
 .promo {
-  margin: 0 auto;
   margin-bottom: 22px;
-  position: relative;
   text-align: center;
 
-  background: url("../img/promo-bg-img-m.png");
+  background-image: url("../img/promo-bg-img-m.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
 
   &::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: 243px;
     left: 0;
     z-index: 0;
 
@@ -23,26 +21,13 @@
     @media (min-width: @tablet-width) {
       background: none;
     }
-
-    @media (min-width: @desktop-width) {
-      width: 720px;
-      min-height: 694px;
-      z-index: -1;
-      background-color: rgba(@basic-green, 0.85);
-      left: 720px;
-      top: -130px;
-      // right: 0;
-    }
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    width: 709px;
     background-image: none;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
     min-height: 694px;
   }
 }
@@ -54,8 +39,6 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // padding-left: 88px;
-    width: 1222px;
   }
 }
 
@@ -63,24 +46,21 @@
   margin: 0 auto;
   padding-top: 27px;
   padding-bottom: 25px;
-  width: 249px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    width: 414px;
+    padding-left: 87px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 111px;
+    // padding-top: 111px;
   }
 }
 
 .promo__slogan {
   margin: 0;
   padding-top: 0;
-  padding-right: 62px;
   padding-bottom: 29px;
-  padding-left: 60px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
@@ -93,7 +73,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 0;
+    padding-left: 87px;
     font-size: 20px;
     line-height: 20px;
     color: @basic-black;
@@ -102,8 +82,6 @@
 }
 
 .promo__image {
-  padding-right: 20px;
-  padding-left: 20px;
   margin-bottom: 3px;
   width: 280px;
   height: 270px;
@@ -123,18 +101,16 @@
 .promo__button-wrapper {
   margin: 0;
   margin-bottom: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
     z-index: 3;
     top: 250px;
+    left: 91px;
   }
 
   @media (min-width: @desktop-width) {
     top: 300px;
-    padding-left: 88px;
     width: 244px;
   }
 }
