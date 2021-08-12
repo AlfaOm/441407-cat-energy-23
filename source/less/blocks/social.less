@@ -1,5 +1,6 @@
 .social__list {
   display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   padding-top: 20px;
@@ -8,11 +9,17 @@
   text-align: center;
   list-style: none;
   border-bottom: 1px solid @spesial-grey-3;
+
+  @media (min-width: @tablet-width) {
+    gap: 28px;
+    padding: 0;
+    border: none;
+  }
 }
 
 .social__item {
   position: relative;
-  width: 130px;
+  width: 28px;
   height: 22px;
 
   &::before {
@@ -20,7 +27,7 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    border: 3px solid @spesial-grey-3;
+    border: 2px solid @spesial-grey-3;
     cursor: pointer;
   }
 }
