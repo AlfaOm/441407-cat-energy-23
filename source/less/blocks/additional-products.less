@@ -39,8 +39,11 @@
 }
 
 .additional-products__parameter tr {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: @tablet-width) {
-    display: flex;
+    // display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -67,6 +70,7 @@
 
 .additional-products__table-name {
   // padding-top: 13px;
+  width: 100%;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -77,6 +81,7 @@
   border-top: 1px solid @special-grey;
 
   @media (min-width: @tablet-width) {
+    width: auto;
     font-size: 20px;
     line-height: 20px;
     border-top: none;
