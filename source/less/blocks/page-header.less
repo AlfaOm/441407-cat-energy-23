@@ -2,8 +2,6 @@
   background-color: @basic-white;
 
   @media (min-width: @tablet-width) {
-    // display: grid;
-    // margin: 0 auto;
     padding-top: 26px;
     border: none;
 
@@ -22,6 +20,12 @@
       rgba(@basic-green, 0.85)
     );
   }
+
+  &--inner-form {
+    @media (min-width: @desktop-width) {
+      background: @basic-white;
+    }
+  }
 }
 
 .page-header__wrapper {
@@ -34,11 +38,15 @@
 
 .page-header__logo {
   padding-top: 10px;
-  padding-right: 65px;
+  // padding-right: 65px;
+  margin-right: 65px;
   padding-bottom: 17px;
+  padding-left: 20px;
 
   @media (min-width: @tablet-width) {
-    padding-right: 95px;
+    // padding-right: 95px;
+    margin-right: 95px;
+    padding: 0;
   }
 }
 
