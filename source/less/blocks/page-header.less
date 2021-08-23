@@ -13,12 +13,24 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 82px;
     padding-top: 69px;
-    background: linear-gradient(
-      to right,
-      @basic-white 50%,
-      rgba(@basic-green, 0.85) 50%,
-      rgba(@basic-green, 0.85)
-    );
+    min-height: 694px;
+    // background-image: linear-gradient(
+    //   to right,
+    //   @basic-white 50%,
+    //   rgba(@basic-green, 0.85) 50%,
+    //   rgba(@basic-green, 0.85)
+    // );
+    background-image: linear-gradient(
+        to right,
+        @basic-white 50%,
+        transparent 50%,
+        transparent
+      ),
+      url("../../img/bg-promo-desktop.png"),
+      linear-gradient(to right, @bg-promo-desktop, @bg-promo-desktop);
+
+    background-position: 0 0, right -2px, 0 -1px;
+    background-repeat: no-repeat;
   }
 
   &--inner-form {
@@ -33,6 +45,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 90px;
   }
 }
 

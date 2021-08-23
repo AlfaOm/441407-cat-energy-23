@@ -22,36 +22,40 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 694px;
+    // min-height: 499px;
   }
 }
 
 .promo__wrapper {
   position: relative;
   z-index: 2;
+  padding-top: 27px;
 
   background-image: url("../img/promo-bg-img-m1.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
 
   @media (min-width: @tablet-width) {
+    padding-left: 87px;
+    padding-bottom: 526px;
     background-image: none;
   }
 
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    padding-left: 80px;
+    padding-bottom: 0;
+    width: 610px;
   }
 }
 
 .promo__title {
   margin: 0 auto;
-  padding-top: 27px;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding-left: 87px;
+    margin-bottom: 41px;
   }
 
   @media (min-width: @desktop-width) {
@@ -62,7 +66,7 @@
 .promo__slogan {
   margin: 0;
   padding-top: 0;
-  padding-bottom: 29px;
+  margin-bottom: 302px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
@@ -75,7 +79,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 87px;
+    margin-bottom: 49px;
     font-size: 20px;
     line-height: 20px;
     color: @basic-black;
@@ -84,17 +88,24 @@
 }
 
 .promo__image {
-  margin-bottom: 3px;
+  position: absolute;
+  top: 167px;
+  left: 0;
+  z-index: 2;
   width: 280px;
   height: 270px;
-  box-sizing: content-box;
+  // box-sizing: content-box;
 
   @media (min-width: @tablet-width) {
+    z-index: -1;
+    top: 231px;
     width: 709px;
     height: 609px;
   }
 
   @media (min-width: @desktop-width) {
+    top: -50px;
+    left: 478px;
     width: 552px;
     height: 499px;
   }
@@ -102,13 +113,14 @@
 
 .promo__button-wrapper {
   margin: 0;
-  margin-bottom: 22px;
+  // margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    z-index: 3;
-    top: 250px;
-    left: 91px;
+    // position: absolute;
+    // z-index: 3;
+    // top: 250px;
+    // left: 91px;
+    text-align: left;
   }
 
   @media (min-width: @desktop-width) {

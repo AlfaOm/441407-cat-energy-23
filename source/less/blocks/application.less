@@ -1,8 +1,21 @@
 .application {
   margin-bottom: 42px;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 104px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-bottom: 11px;
+    margin-bottom: 69px;
+  }
+}
+
+.application__title {
+  margin: 0;
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 72px;
   }
 }
 
@@ -47,7 +60,7 @@
     @media (min-width: @tablet-width) {
       position: absolute;
       top: -35px;
-      left: 78px;
+      left: 113px;
       z-index: -1;
       counter-increment: list;
       content: counter(list) " ";
@@ -61,6 +74,29 @@
   &--leaf {
     background-image: url("../img/svg/leaf.svg");
     background-repeat: no-repeat;
+    background-position: 18px 16px;
+  }
+
+  &--method {
+    background-image: url("../../img/svg/method.svg");
+    background-repeat: no-repeat;
+    background-position: 16px 14px;
+  }
+
+  &--serve {
+    background-image: url("../../img/svg/serve.svg");
+    background-repeat: no-repeat;
+    background-position: 17px 14px;
+  }
+
+  &--clock {
+    background-image: url("../../img/svg/clock.svg");
+    background-repeat: no-repeat;
+    background-position: 16px 14px;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-position: 27px 27px;
   }
 }
 
@@ -71,7 +107,7 @@
   color: @special_dark-grey;
 
   @media (min-width: @tablet-width) {
-    padding-top: 151px;
+    padding-top: 111px;
     padding-left: 0;
     width: 245px;
     font-size: 16px;
