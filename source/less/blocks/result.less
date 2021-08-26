@@ -196,6 +196,8 @@
 }
 
 .result__image-box {
+  position: relative;
+
   @media (min-width: @desktop-width) {
     height: calc(100% + 90px);
     background: linear-gradient(
@@ -213,11 +215,12 @@
   margin-bottom: 23px;
 
   @media (min-width: @tablet-width) {
+    width: 708px;
     height: 520px;
   }
 
   @media (min-width: @desktop-width) {
-    right: 50px;
+    width: 730px;
   }
 }
 
@@ -249,12 +252,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    left: 32px;
     height: 100%;
   }
 
   @media (min-width: @desktop-width) {
-    left: 8px;
+    // left: 8px;
   }
 }
 
@@ -262,6 +264,11 @@
   @media (min-width: @tablet-width) {
     width: 677px;
     height: 520px;
+    left: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 87px;
   }
 }
 
@@ -270,7 +277,7 @@
     position: absolute;
     z-index: 0;
     top: 0;
-    right: -30px;
+    right: -16px;
     width: 50%;
     height: calc(100% + 90px);
     overflow: visible;
@@ -283,7 +290,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    right: -58px;
+    right: -88px;
   }
 }
 
@@ -291,13 +298,13 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 0;
-    right: 70px;
+    right: 55px;
     width: 545px;
     height: 520px;
   }
 
   @media (min-width: @desktop-width) {
-    right: 45px;
+    right: 94px;
   }
 }
 
@@ -332,10 +339,16 @@
 
   @media (min-width: @tablet-width) {
     justify-content: center;
-    gap: 30px;
-    padding-left: 22px;
+    // gap: 30px;
+    padding-left: 16px;
     // padding-right: 22px;
     // width: 571px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    gap: 24px;
+    left: 141px;
   }
 }
 
