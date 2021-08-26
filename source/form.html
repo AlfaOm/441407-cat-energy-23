@@ -151,7 +151,7 @@
 
     <!-- Адрес -->
 
-    <div class="contacts-background">
+    <!-- <div class="contacts-background">
       <section class="contacts container container--padding">
         <h2 class="visually-hidden">Контакты для дилеров</h2>
         <div class="contacts__wrapper">
@@ -162,18 +162,59 @@
 
         </div>
       </section>
-    </div>
+    </div> -->
 
     <!-- Карта -->
 
-    <section class="map">
+    <!-- <section class="map">
       <h2 class="visually-hidden">Адрес офиса на карте</h2>
       <div class="map__wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.4545883032742!2d30.31903146792114!3d59.93872411150009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1629780325602!5m2!1sru!2sru"
+          width="1440" height="400" style="border: 0;" allowfullscreen="" loading="lazy" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
         <a class="map__image" target="_blank" href="https://yandex.ru/maps/-/CCQhQVUJwB">
-          <img src="img/map-mobile.png" width="320" height="362"
-            alt="Адрес офиса: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/map-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.png">
+            <img src="img/map-mobile.png" width="320" height="362"
+              alt="Адрес офиса: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
         </a>
       </div>
+    </section> -->
+
+    <section class="address">
+      <div class="address__contacts-background">
+        <div class="container address__contacts-container">
+          <section class="address__contacts">
+            <h2 class="visually-hidden">Контакты для дилеров</h2>
+            <div class="address__contacts-wrapper">
+              <b class="address__contacts-title">Приглашаем к сотрудничеству дилеров!</b>
+              <address class="address__contacts-address">
+                ул. Большая Конюшенная, д. 19/8 <span class="address__contacts-city">Санкт-Петербург</span>
+              </address>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section class="address__map">
+        <h2 class="visually-hidden">Адрес офиса на карте</h2>
+        <div class="address__map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.4545883032742!2d30.31903146792114!3d59.93872411150009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1629780325602!5m2!1sru!2sru"
+            width="1440" height="400" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+          <a class="address__map-image" target="_blank" href="https://yandex.ru/maps/-/CCQhQVUJwB">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/map-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.png">
+              <img src="img/map-mobile.png" width="320" height="362"
+                alt="Адрес офиса: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            </picture>
+          </a>
+        </div>
+      </section>
+
     </section>
 
   </main>

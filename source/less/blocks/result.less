@@ -215,6 +215,10 @@
   @media (min-width: @tablet-width) {
     height: 520px;
   }
+
+  @media (min-width: @desktop-width) {
+    right: 50px;
+  }
 }
 
 // .result__image-wrapper {
@@ -226,6 +230,7 @@
   @media (min-width: @tablet-width) {
     display: block;
     position: absolute;
+    max-width: none;
   }
 }
 
@@ -244,12 +249,13 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    left: 32px;
     height: 100%;
   }
 
-  // @media (min-width: @desktop-width) {
-  // }
+  @media (min-width: @desktop-width) {
+    left: 8px;
+  }
 }
 
 .result__image-before img {
@@ -264,7 +270,7 @@
     position: absolute;
     z-index: 0;
     top: 0;
-    right: 0;
+    right: -30px;
     width: 50%;
     height: calc(100% + 90px);
     overflow: visible;
@@ -277,7 +283,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    // background-color: @special-grey-4;
+    right: -58px;
   }
 }
 
@@ -285,10 +291,13 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 0;
-    left: -80px;
+    right: 70px;
     width: 545px;
-    // width: 100%;
     height: 520px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 45px;
   }
 }
 
@@ -297,7 +306,6 @@
     position: absolute;
     top: 0;
     left: 40px;
-    // z-index: -1;
     width: 251px;
 
     &--full {
@@ -307,7 +315,6 @@
   }
 
   @media (min-width: @tablet-width) {
-    // z-index: 1;
     position: relative;
     overflow: hidden;
     height: 100%;
@@ -327,7 +334,7 @@
     justify-content: center;
     gap: 30px;
     padding-left: 22px;
-    padding-right: 22px;
+    // padding-right: 22px;
     // width: 571px;
   }
 }
