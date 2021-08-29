@@ -1,0 +1,35 @@
+.heading-secondary {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    margin-left: 22px;
+    top: 15px;
+    width: 100vw;
+    height: 2px;
+    background-color: @basic-green;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 36px;
+      top: 22px;
+    }
+  }
+
+  &::before {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      left: -391px;
+      width: 50%;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: -700px;
+    }
+  }
+
+  &--col-1::after {
+    margin-left: 56px;
+  }
+}
