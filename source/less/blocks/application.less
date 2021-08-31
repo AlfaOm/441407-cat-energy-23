@@ -1,12 +1,12 @@
 .application {
-  margin-bottom: 42px;
+  margin-bottom: 46px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 104px;
+    margin-bottom: 8px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 31px;
   }
 }
 
@@ -15,7 +15,7 @@
   margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 70px;
   }
 }
 
@@ -27,7 +27,6 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 153px;
     counter-reset: list;
   }
 
@@ -40,11 +39,12 @@
 
 .application__item {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   &::before {
     content: "";
     position: absolute;
+    top: 2px;
     z-index: -1;
     width: 60px;
     height: 60px;
@@ -59,8 +59,8 @@
   &::after {
     @media (min-width: @tablet-width) {
       position: absolute;
-      top: -35px;
-      left: 113px;
+      top: -38px;
+      left: 115px;
       z-index: -1;
       counter-increment: list;
       content: counter(list) " ";
@@ -74,40 +74,53 @@
   &--leaf {
     background-image: url("../img/svg/leaf.svg");
     background-repeat: no-repeat;
-    background-position: 18px 16px;
+    background-position: 19px 18px;
   }
 
   &--method {
     background-image: url("../img/svg/method.svg");
     background-repeat: no-repeat;
-    background-position: 16px 14px;
+    background-position: 15px 15px;
   }
 
   &--serve {
     background-image: url("../img/svg/serve.svg");
     background-repeat: no-repeat;
-    background-position: 17px 14px;
+    background-position: 18px 17px;
   }
 
   &--clock {
     background-image: url("../img/svg/clock.svg");
     background-repeat: no-repeat;
-    background-position: 16px 14px;
+    background-position: 17px 17px;
   }
 
   @media (min-width: @tablet-width) {
+    margin-right: 137px;
+    margin-bottom: 37px;
+    min-height: 280px;
     background-position: 27px 27px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
 .application__description {
   margin: 0;
-  padding-left: 75px;
+  padding-top: 4px;
+  padding-left: 80px;
 
   color: @special_dark-grey;
 
   @media (min-width: @tablet-width) {
-    padding-top: 111px;
+    padding-top: 114px;
     padding-left: 0;
     width: 245px;
     font-size: 16px;
