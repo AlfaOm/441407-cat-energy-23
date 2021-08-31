@@ -1,5 +1,5 @@
 .select-programm-wrapper {
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 45px;
@@ -19,24 +19,28 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .select-programm__wrapper-block {
-  padding-top: 30px;
+  padding-top: 31px;
   padding-right: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
   padding-left: 20px;
   background-color: @basic-grey;
 
   @media (min-width: @tablet-width) {
     padding-top: 77px;
-    padding-bottom: 53px;
+    padding-bottom: 57px;
     padding-right: 53px;
-    padding-left: 53px;
+    padding-left: 51px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 55px;
+    padding-bottom: 59px;
     padding-right: 61px;
     padding-left: 52px;
     width: 570px;
@@ -50,21 +54,24 @@
     @media (max-width: @mobile-width-only) {
       content: "";
       position: absolute;
-      top: 24px;
+      top: 22px;
       left: 13px;
-      width: 67px;
-      height: 50px;
+      width: 68px;
+      height: 54px;
       background-image: url("../img/svg/cat-sitting.svg");
-      background-size: 67px 50px;
+      background-size: 68px 54px;
+      background-repeat: no-repeat;
     }
 
     @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
+      top: 81px;
+      right: 63px;
       width: 200px;
       height: 211px;
-      right: 62px;
       background-image: url("../img/svg/cat-sitting.svg");
+      background-repeat: no-repeat;
     }
 
     @media (min-width: @desktop-width) {
@@ -73,6 +80,7 @@
       width: 100px;
       height: 106px;
       background-size: 100px 106px;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -86,26 +94,29 @@
       position: absolute;
       top: 24px;
       left: 13px;
-      width: 67px;
-      height: 50px;
+      width: 68px;
+      height: 52px;
       background-image: url("../img/svg/cat-going.svg");
-      background-size: 67px 50px;
+      background-size: 68px 52px;
+      background-repeat: no-repeat;
     }
 
     @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
+      top: 91px;
+      right: 29px;
       width: 268px;
       height: 200px;
-      right: 27px;
       background-image: url("../img/svg/cat-going.svg");
+      background-repeat: no-repeat;
     }
 
     @media (min-width: @desktop-width) {
       top: 47px;
       left: 33px;
-      // width: 134px;
-      // height: 100px;
+      width: 134px;
+      height: 100px;
       background-size: 134px 100px;
       background-repeat: no-repeat;
     }
@@ -114,7 +125,7 @@
 
 .select-programm__title {
   margin: 0;
-  margin-left: 19px;
+  margin-left: 11px;
   margin-bottom: 29px;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -130,14 +141,14 @@
 
   @media (min-width: @tablet-width) {
     margin-left: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     font-size: 36px;
     line-height: 36px;
     text-align: left;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 73px;
+    margin-bottom: 76px;
     margin-left: 162px;
   }
 }
@@ -145,7 +156,7 @@
 .select-programm__description {
   position: relative;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 42px;
   width: 227px;
 
   color: @special_dark-grey;
@@ -154,7 +165,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 110px;
+      top: 112px;
       left: 0;
       width: 240px;
       height: 1px;
@@ -163,7 +174,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 52px;
     width: 340px;
     font-size: 16px;
     line-height: 24px;
@@ -171,7 +182,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 26px;
     width: 467px;
   }
 }
@@ -200,13 +211,17 @@
     content: "";
     position: absolute;
     top: 2px;
-    left: 102px;
+    left: 100px;
     width: 24px;
     height: 12px;
     background-image: url("../img/svg/arrow.svg");
 
     @media (min-width: @tablet-width) {
       top: 8px;
+      left: 131px;
+    }
+
+    @media (min-width: @desktop-width) {
       left: 133px;
     }
   }

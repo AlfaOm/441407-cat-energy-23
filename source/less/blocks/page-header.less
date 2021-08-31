@@ -2,14 +2,13 @@
   background-color: @basic-white;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 64px;
     padding-top: 26px;
     border: none;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 74px;
-    padding-top: 69px;
+    margin-bottom: 81px;
+    padding-top: 53px;
     min-height: 694px;
     // background-image: linear-gradient(
     //   to right,
@@ -31,7 +30,14 @@
   }
 
   &--inner-form {
+    margin-bottom: 27px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 64px;
+    }
+
     @media (min-width: @desktop-width) {
+      margin-bottom: 73px;
       min-height: 0;
       background: @basic-white;
     }
@@ -55,10 +61,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 31px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 90px;
+    margin-bottom: 107px;
   }
 }
 
@@ -66,8 +73,8 @@
   padding-top: 10px;
   // padding-right: 65px;
   margin-right: 65px;
-  padding-bottom: 17px;
-  padding-left: 20px;
+  padding-bottom: 13px;
+  padding-left: 18px;
 
   @media (min-width: @tablet-width) {
     // padding-right: 95px;

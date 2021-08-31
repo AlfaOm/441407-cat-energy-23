@@ -1,4 +1,6 @@
 .catalog {
+  margin-bottom: 25px;
+
   @media (min-width: @tablet-width) {
     // padding-top: 163px;
   }
@@ -36,8 +38,8 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: -230px;
+    width: calc(100% + 70vw);
     height: 1px;
     background-color: @special-grey-5;
 
@@ -50,7 +52,21 @@
 .catalog__item:first-child::before {
   content: "";
   position: absolute;
-  width: 100%;
+  left: -230px;
+  width: calc(100% + 70vw);
+  height: 1px;
+  background-color: @special-grey-5;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.catalog__item:last-child::after {
+  content: "";
+  position: absolute;
+  left: -230px;
+  width: calc(100% + 70vw);
   height: 1px;
   background-color: @special-grey-5;
 
