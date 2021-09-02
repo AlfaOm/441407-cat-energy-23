@@ -6,19 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
 
-    <div class="page-header__wrapper container container--mob-100">
+    <div class="page-header__wrapper page-header__wrapper--desktop container container--mob-100">
 
       <!-- Логотип -->
 
       <div class="page-header__logo">
         <a class="page-header__logo-icon">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/svg/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
           <img src="img/svg/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энэрджи">
+        </picture>
         </a>
       </div>
 
@@ -71,9 +78,9 @@
             </a>
           </p>
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/promo-desktop.png">
-            <source media="(min-width: 768px)" srcset="img/promo-tablet.jpg">
-            <img class="promo__image" src="img/promo-mobile.png" width="280" height="270"
+            <source media="(min-width: 1280px)" srcset="img/promo-desktop.png 1x, img/promo-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/promo-tablet.jpg 1x, img/promo-tablet@2x.jpg 2x">
+            <img class="promo__image" src="img/promo-mobile.png" srcset="img/promo-mobile@2x.png 2x" width="280" height="270"
               alt="Изображение товара со вкусом курицы в упаковке из стаканчика желто-оранжевой расцветки">
           </picture>
         </div>
@@ -181,16 +188,16 @@
           <div class="result__image">
             <div class="result__image-before result__image-wrapper">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-fat-full.png">
-                <img src="img/cat-before.png" width="311" height="232" alt="Изображение упитанного кота">
+                <source media="(min-width: 768px)" srcset="img/cat-fat-full.png 1x, img/cat-fat-full@2x.png 2x">
+                <img src="img/cat-before-m.png" srcset="img/cat-before-m@2x.png 2x" width="311" height="232" alt="Изображение упитанного кота">
               </picture>
             </div>
 
             <div class="result__image-wrapper result__image-after">
               <div class="result__image-wrapper-after">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/cat-skinny-full.png">
-                  <img src="img/cat-after.png" width="251" height="240" alt="Изображение худого кота">
+                  <source media="(min-width: 768px)" srcset="img/cat-skinny-full.png 1x, img/cat-skinny-full@2x.png 2x">
+                  <img src="img/cat-after-m.png" srcset="img/cat-after-m@2x.png 2x" width="251" height="240" alt="Изображение худого кота">
                 </picture>
               </div>
             </div>
@@ -266,9 +273,9 @@
             width="1440" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
           <a class="address__map-image" target="_blank" href="https://yandex.ru/maps/-/CCQhQVUJwB">
             <picture>
-              <source media="(min-width: 1280px)" srcset="img/map-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/map-tablet.png">
-              <img src="img/map-mobile.png" width="320" height="362"
+              <source media="(min-width: 1280px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+              <img src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="362"
                 alt="Адрес офиса: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
             </picture>
           </a>
