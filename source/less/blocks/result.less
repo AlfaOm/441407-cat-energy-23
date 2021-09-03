@@ -1,5 +1,5 @@
 .result {
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 36px;
   background-color: @special-grey-4;
 
@@ -59,7 +59,7 @@
 
 .result__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 64px;
@@ -73,11 +73,13 @@
 .result__description {
   margin: 0;
   margin-bottom: 25px;
+  width: 284px;
 
   color: @special_dark-grey;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 53px;
+    width: 708px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -155,7 +157,8 @@
 
   @media (min-width: @tablet-width) {
     top: 63px;
-    width: 127px;
+    left: 14px;
+    width: 130px;
     font-size: 14px;
     line-height: 14px;
     background-color: @basic-white;
@@ -232,7 +235,7 @@
 .result__image {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 15px;
@@ -478,7 +481,7 @@
   }
 
   &::-moz-range-track {
-    padding: 5px;
+    padding: 3px;
     border-radius: 6px;
     border: 1px solid @special-grey;
     background-color: @basic-white;
@@ -517,18 +520,18 @@
     }
 
     &::-moz-range-track {
-      height: 1px;
+      height: 2px;
       background-color: @range-track;
       border: none;
     }
 
     &::-moz-range-thumb {
       margin-top: -17px;
-      width: 10px;
-      height: 10px;
+      width: 9px;
+      height: 9px;
       background: @basic-green;
       border-radius: 50%;
-      border: 12px solid @basic-white;
+      border: 11px solid @basic-white;
       box-shadow: 0 0 0 1px @special-grey, 0 2px 3px 1px @special-grey;
       cursor: pointer;
     }

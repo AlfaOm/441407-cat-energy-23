@@ -1,4 +1,6 @@
 .heading-secondary {
+  position: relative;
+
   &::before,
   &::after {
     content: "";
@@ -15,6 +17,7 @@
     }
 
     @media (min-width: @desktop-width) {
+      margin-left: 41px;
       top: 22px;
     }
   }
@@ -24,12 +27,12 @@
 
     @media (min-width: @tablet-width) {
       display: block;
-      left: -391px;
-      width: 50%;
+      right: calc(100% + 40px);
+      // width: 50%;
     }
 
     @media (min-width: @desktop-width) {
-      left: -686px;
+      right: calc(100% + 40px);
     }
   }
 

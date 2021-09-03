@@ -6,7 +6,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 82px;
+    margin-bottom: 84px;
   }
 }
 
@@ -79,11 +79,11 @@
 
   &--comment {
     @media (min-width: @tablet-width) {
-      margin-bottom: 61px;
+      margin-bottom: 64px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-bottom: 63px;
+      margin-bottom: 65px;
     }
   }
 
@@ -159,7 +159,7 @@
   }
 
   &--additional {
-    margin-bottom: 38px;
+    margin-bottom: 41px;
 
     @media (min-width: @tablet-width) {
       margin-bottom: 64px;
@@ -377,12 +377,13 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .form__input {
   margin-left: 14px;
-  padding-top: 13px;
+  // padding-top: 10px; // 13
   padding-right: 33px;
-  padding-bottom: 14px;
+  // padding-bottom: 11px; // 14
   padding-left: 15px;
-  border: 1px solid @special-border-input;
   width: 100%;
+  height: 47px;
+  border: 1px solid @special-border-input;
 
   &:hover {
     border-color: @special-grey;
@@ -410,10 +411,11 @@ input[type="number"]::-webkit-inner-spin-button {
 
   @media (min-width: @tablet-width) {
     margin-left: 17px;
-    padding-top: 10px;
+    // padding-top: 10px;
     padding-right: 18px;
-    padding-bottom: 11px;
+    // padding-bottom: 11px;
     padding-left: 18px;
+    height: 52px;
   }
 
   &--contact {
@@ -506,6 +508,8 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-right: 12px;
   padding-bottom: 13px;
   padding-left: 13px;
+
+  width: 280px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
