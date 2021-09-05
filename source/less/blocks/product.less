@@ -92,11 +92,13 @@
 
   &--max {
     @media (min-width: @tablet-width) {
-      padding-top: 15px;
+      padding-top: 19px;
+      padding-right: 6px;
     }
 
     @media (min-width: @desktop-width) {
       padding-top: 0;
+      padding-left: 6px;
     }
   }
 }
@@ -110,8 +112,13 @@
 
 .product__image--max img {
   @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 206px;
+  }
+
+  @media (min-width: @desktop-width) {
     width: 168px;
-    height: 207px;
+    height: 203px;
   }
 }
 
