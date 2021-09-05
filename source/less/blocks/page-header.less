@@ -10,28 +10,28 @@
     margin-bottom: 81px;
     padding-top: 53px;
     min-height: 694px;
+    background-color: @bg-promo-desktop;
     background-image: linear-gradient(
         to right,
         @basic-white 50%,
         transparent 50%,
         transparent
       ),
-      url("../img/bg-promo-desktop.png"),
-      linear-gradient(to right, @bg-promo-desktop, @bg-promo-desktop);
+      url("../img/bg-promo-desktop.png");
 
     background-position: 0 0, right -2px, 0 -1px;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
+      background-color: @bg-promo-desktop;
       background-image: linear-gradient(
           to right,
-          @basic-white 100%,
-          transparent 100%,
+          @basic-white 50%,
+          transparent 50%,
           transparent
         ),
-        url("../img/bg-promo-desktop@2x.png"),
-        linear-gradient(to right, @bg-promo-desktop, @bg-promo-desktop);
-      background-size: 720px 695px;
+        url("../img/bg-promo-desktop@2x.png");
+      background-size: 100% 100%, 720px 695px;
     }
   }
 
