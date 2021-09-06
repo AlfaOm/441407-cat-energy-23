@@ -1,6 +1,10 @@
 .additional-products {
   margin-bottom: 35px;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 75px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 86px;
   }
@@ -17,43 +21,14 @@
 .additional-products__title {
   position: relative;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
 
-  // &::before,
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   margin-left: 22px;
-  //   top: 15px;
-  //   width: 100%;
-  //   height: 2px;
-  //   background-color: @basic-green;
-
-  //   @media (min-width: @tablet-width) {
-  //     margin-left: 36px;
-  //     top: 22px;
-  //   }
-  // }
-
-  // &::before {
-  //   display: none;
-
-  //   @media (min-width: @tablet-width) {
-  //     display: block;
-  //     left: -391px;
-  //     width: 50%;
-  //   }
-
-  //   @media (min-width: @desktop-width) {
-  //     left: -700px;
-  //   }
-  // }
-
   @media (min-width: @tablet-width) {
+    margin-bottom: 80px;
     padding-left: 36px;
     font-size: 36px;
     line-height: 36px;
@@ -65,10 +40,11 @@
 }
 
 .additional-products__parameter {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   border-collapse: collapse;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 69px;
     border-collapse: collapse;
     width: 100%;
   }
@@ -91,7 +67,7 @@
     // flex-direction: row;
     // flex-wrap: wrap;
     padding-top: 26px;
-    padding-right: 38px;
+    padding-right: 34px;
     padding-bottom: 28px;
     padding-left: 38px;
     border: 1px solid @special-grey;
@@ -105,7 +81,7 @@
     margin: 0;
     padding: 0;
     padding-top: 15px;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
     border: none;
     border-top: 1px solid @special-grey;
   }
@@ -120,7 +96,7 @@
 }
 
 .additional-products__table-name {
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   padding-top: 13px;
   width: 100%;
 
@@ -133,7 +109,7 @@
   // border-top: 1px solid @special-grey;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     padding: 0;
     width: 50%;
     font-size: 20px;
@@ -148,7 +124,7 @@
 }
 
 .additional-products__table-data {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   width: 50%;
   font-family: "Arial", "Oswald", sans-serif;
   font-size: 14px;
@@ -157,7 +133,8 @@
 
   @media (min-width: @tablet-width) {
     align-self: flex-end;
-    padding-bottom: 6px;
+    margin-bottom: 22px;
+    // padding-bottom: 10px;
     // width: 25%;
     font-size: 16px;
     line-height: 16px;
@@ -166,6 +143,7 @@
   @media (min-width: @desktop-width) {
     align-self: center;
     margin: 0;
+    padding-top: 7px;
     padding-bottom: 0;
     width: 18%;
   }
@@ -178,7 +156,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 25%;
+    width: 26%;
     text-align: left;
   }
 }
@@ -187,11 +165,12 @@
   text-align: right;
 
   @media (min-width: @tablet-width) {
+    padding-right: 4px;
     width: 15%;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 18px;
+    padding-left: 11px;
     width: 10%;
     text-align: left;
   }
@@ -200,9 +179,10 @@
 .additional-products__button {
   padding: 10px 0;
   width: 278px;
+  letter-spacing: 1px;
 
   @media (min-width: @tablet-width) {
-    width: 632px;
+    width: 630px;
   }
 
   @media (min-width: @desktop-width) {
@@ -215,10 +195,10 @@
   justify-content: center;
   // align-items: flex-end;
   position: relative;
-  padding-top: 186px;
+  padding-top: 188px;
   padding-right: 61px;
-  padding-bottom: 43px;
-  padding-left: 58px;
+  padding-bottom: 42px;
+  padding-left: 53px;
   min-height: 289px;
   background-image: url("../img/bg-additional-bonus.png");
   background-repeat: no-repeat;
@@ -236,9 +216,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 184px;
+    padding-top: 186px;
     padding-right: 43px;
-    padding-left: 41px;
+    padding-left: 36px;
     padding-bottom: 42px;
     min-height: 289px;
     background-image: url("../img/bg-additional-bonus-desktop.png");
@@ -253,6 +233,11 @@
     height: 62px;
     background-image: url("../img/svg/bonus-box.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      top: 63px;
+      left: 89px;
+    }
 
     @media (min-width: @desktop-width) {
       left: 95px;

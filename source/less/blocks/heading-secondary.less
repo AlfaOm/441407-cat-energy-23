@@ -1,16 +1,23 @@
 .heading-secondary {
+  position: relative;
+
   &::before,
   &::after {
     content: "";
     position: absolute;
     margin-left: 22px;
-    top: 15px;
+    top: 16px;
     width: 100vw;
     height: 2px;
     background-color: @basic-green;
 
     @media (min-width: @tablet-width) {
       margin-left: 36px;
+      top: 22px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 41px;
       top: 22px;
     }
   }
@@ -20,16 +27,20 @@
 
     @media (min-width: @tablet-width) {
       display: block;
-      left: -391px;
-      width: 50%;
+      right: calc(100% + 40px);
+      // width: 50%;
     }
 
     @media (min-width: @desktop-width) {
-      left: -700px;
+      right: calc(100% + 40px);
     }
   }
 
   &--col-1::after {
-    margin-left: 56px;
+    margin-left: 46px;
+
+    @media (min-width: @desktop-width) {
+      margin-left: 40px;
+    }
   }
 }
