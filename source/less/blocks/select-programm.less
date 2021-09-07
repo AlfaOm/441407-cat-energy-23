@@ -157,7 +157,6 @@
   position: relative;
   margin: 0;
   margin-bottom: 43px;
-  // width: 227px;
 
   color: @special_dark-grey;
 
@@ -226,7 +225,19 @@
     }
   }
 
+  &:hover {
+    &::after {
+      width: 32px;
+      background-image: url("../img/svg/arrow-long.svg");
+    }
+  }
+
+
   &:active {
     color: rgba(@basic-black, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 }
