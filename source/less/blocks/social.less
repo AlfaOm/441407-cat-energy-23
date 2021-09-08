@@ -48,9 +48,35 @@
   }
 
   &--facebook svg {
+    stroke: @logo-academy;
+
     @media (min-width: @tablet-width) {
       width: 28px;
       height: 33px;
+    }
+
+    &:hover {
+      stroke: @basic-green;
+    }
+
+    &:active {
+      stroke-opacity: 0.3;
+    }
+  }
+
+  svg {
+    fill: @logo-academy;
+  }
+
+  &:hover {
+    svg {
+      fill: @basic-green;
+    }
+  }
+
+  &:active {
+    svg {
+      fill-opacity: 0.3;
     }
   }
 }

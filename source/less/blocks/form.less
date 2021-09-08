@@ -444,6 +444,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .form__input-icon-email {
   position: absolute;
   right: 16px;
+  stroke: @special_dark-grey-2;
 
   @media (min-width: @tablet-width) {
     right: 20px;
@@ -454,9 +455,16 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
+.form__input-email {
+  &:focus + svg * {
+    stroke: @basic-green;
+  }
+}
+
 .form__input-icon-phone {
   position: absolute;
   right: 13px;
+  fill: @basic-black;
 
   @media (min-width: @tablet-width) {
     right: 16px;
@@ -467,16 +475,10 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-// .form__input-email:focus + .form__input-icon-email line {
-//   stroke: @basic-green;
-// }
-
-// .form__input-email:focus + .form__input-icon-email path {
-//   stroke: @basic-green;
-// }
-
-.form__input-phone:focus + .form__input-icon-phone path {
-  fill: @basic-green;
+.form__input-phone {
+  &:focus + svg * {
+    fill: @basic-green;
+  }
 }
 
 // Валидация полей
