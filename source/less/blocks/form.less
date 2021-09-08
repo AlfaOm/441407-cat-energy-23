@@ -441,29 +441,10 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-// .form__input-email {
-//   background-image: url("../img/svg/icon-email.svg");
-//   background-repeat: no-repeat;
-//   background-position: 93% 50%;
-
-//   @media (min-width: @tablet-width) {
-//     background-position: 97% 50%;
-//   }
-// }
-
-// .form__input-phone {
-//   background-image: url("../img/svg/icon-phone.svg");
-//   background-repeat: no-repeat;
-//   background-position: 94% 50%;
-
-//   @media (min-width: @tablet-width) {
-//     background-position: 97% 50%;
-//   }
-// }
-
 .form__input-icon-email {
   position: absolute;
   right: 16px;
+  stroke: @special_dark-grey-2;
 
   @media (min-width: @tablet-width) {
     right: 20px;
@@ -474,9 +455,16 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
+.form__input-email {
+  &:focus + svg * {
+    stroke: @basic-green;
+  }
+}
+
 .form__input-icon-phone {
   position: absolute;
   right: 13px;
+  fill: @basic-black;
 
   @media (min-width: @tablet-width) {
     right: 16px;
@@ -487,28 +475,25 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-.form__input-email:hover + .form__input-icon-email line {
-  stroke: @basic-green;
+.form__input-phone {
+  &:focus + svg * {
+    fill: @basic-green;
+  }
 }
 
-.form__input-email:hover + .form__input-icon-email path {
-  stroke: @basic-green;
-}
-
-.form__input-phone:hover + .form__input-icon-phone path {
-  fill: @basic-green;
-}
+// Валидация полей
 
 .form__input-required {
   border-color: @status-error;
 }
 
-.form__input-required + .form__input-icon-email line {
+.form__input-required line {
   stroke: @status-error;
 }
 
-.form__input-required + .form__input-icon-email path {
+.form__input-required path {
   stroke: @status-error;
+  fill: @status-error;
 }
 
 .form__textarea {

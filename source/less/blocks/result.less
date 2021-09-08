@@ -389,7 +389,19 @@
     font-size: 20px;
     line-height: 29px;
     background-color: transparent;
-    border-bottom: 2px dotted @radio-checkbox-hover;
+    border-bottom: 2px dotted @slide-toggle;
+  }
+
+  &:hover {
+    @media (min-width: @tablet-width) {
+      border-bottom: 2px solid @slide-toggle;
+    }
+  }
+
+  &:active {
+    @media (min-width: @tablet-width) {
+      border-bottom: 2px solid transparent;
+    }
   }
 }
 
@@ -514,9 +526,29 @@
       background: @basic-green;
       border-radius: 50%;
       border: 12px solid @basic-white;
-      box-shadow: 0 0 0 1px @special-grey, 0 2px 3px 1px @special-grey;
+      box-shadow: 0 0 0 1px @special-grey, 0 1px 3px 0 @sh-slide;
       cursor: pointer;
       appearance: none;
+    }
+
+    &:hover {
+      &::-webkit-slider-thumb {
+        box-shadow: 0 0 0 1px @special-grey, 0 2px 4px 0 @sh-slide-hov;
+      }
+
+      &::-moz-range-thumb {
+        box-shadow: 0 0 0 1px @special-grey, 0 2px 4px 0 @sh-slide-hov;
+      }
+    }
+
+    &:active {
+      &::-webkit-slider-thumb {
+        box-shadow: 0 0 0 1px @basic-green, 0 3px 5px 0 @sh-slide-act;
+      }
+
+      &::-moz-range-thumb {
+        box-shadow: 0 0 0 1px @basic-green, 0 3px 5px 0 @sh-slide-act;
+      }
     }
 
     &::-moz-range-track {
@@ -532,7 +564,7 @@
       background: @basic-green;
       border-radius: 50%;
       border: 11px solid @basic-white;
-      box-shadow: 0 0 0 1px @special-grey, 0 2px 3px 1px @special-grey;
+      box-shadow: 0 0 0 1px @special-grey, 0 1px 3px 0 @sh-slide;
       cursor: pointer;
     }
   }

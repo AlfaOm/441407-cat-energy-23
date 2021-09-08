@@ -1,8 +1,8 @@
 .social__list {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  gap: 33px;
+  flex-wrap: wrap;
+  gap: 34px;
   margin: 0;
   margin-bottom: 22px;
   padding: 0;
@@ -15,8 +15,68 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
-    gap: 28px;
+    gap: 24px;
     padding: 0;
+    width: 130px;
     border: none;
+  }
+}
+
+.social__item {
+  &--vkontakte {
+    align-self: center;
+  }
+
+  &--instagram {
+    align-self: center;
+  }
+}
+
+.social__link {
+  &--vkontakte svg {
+    @media (min-width: @tablet-width) {
+      width: 30px;
+      height: 22px;
+    }
+  }
+
+  &--instagram svg {
+    @media (min-width: @tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--facebook svg {
+    stroke: @logo-academy;
+
+    @media (min-width: @tablet-width) {
+      width: 28px;
+      height: 33px;
+    }
+
+    &:hover {
+      stroke: @basic-green;
+    }
+
+    &:active {
+      stroke-opacity: 0.3;
+    }
+  }
+
+  svg {
+    fill: @logo-academy;
+  }
+
+  &:hover {
+    svg {
+      fill: @basic-green;
+    }
+  }
+
+  &:active {
+    svg {
+      fill-opacity: 0.3;
+    }
   }
 }

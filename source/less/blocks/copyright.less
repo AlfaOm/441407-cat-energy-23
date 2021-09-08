@@ -11,12 +11,20 @@
 .copyright__logo {
   width: 27px;
   height: 34px;
-}
 
-.copyright__logo-icon:hover path {
-  fill: @basic-green;
-}
+  svg {
+    fill: @logo-academy;
+  }
 
-.copyright__logo-icon:active path {
-  opacity: 0.3;
+  &:hover {
+    svg {
+      fill: @basic-green;
+    }
+  }
+
+  &:active {
+    svg {
+      fill-opacity: 0.3;
+    }
+  }
 }
