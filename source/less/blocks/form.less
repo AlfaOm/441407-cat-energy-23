@@ -487,13 +487,9 @@ input[type="number"]::-webkit-inner-spin-button {
   border-color: @status-error;
 }
 
-.form__input-required line {
+.form__input-required + svg * {
   stroke: @status-error;
-}
-
-.form__input-required path {
-  stroke: @status-error;
-  fill: @status-error;
+  // fill: @status-error;
 }
 
 .form__textarea {

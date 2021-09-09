@@ -9,7 +9,7 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <svg style="display: none;">
@@ -155,7 +155,7 @@
               <label class="form__label" for="email-owner">
                 <nobr>E-mail</nobr>:*
               </label>
-              <input class="form__input form__input--contact form__input-email" id="email-owner" type="email"
+              <input class="form__input form__input--contact form__input-email form__input-required" id="email-owner" type="email"
                 name="email" placeholder="kuklachev@gmail.com" required>
               <svg class="form__input-icon-email" width="19" height="14">
                 <use xlink:href="#icon-e-mail"></use>
@@ -163,7 +163,7 @@
             </p>
             <p class="form__input-wrapper">
               <label class="form__label form__label--phone" for="tel-owner">Телефон:*</label>
-              <input class="form__input form__input--contact form__input-phone" id="tel-owner" type="tel" name="tel"
+              <input class="form__input form__input--contact form__input-phone form__input-required" id="tel-owner" type="tel" name="tel"
                 placeholder="8 (960) 900-60-90" required>
               <svg class="form__input-icon-phone" width="20" height="20">
                 <use xlink:href="#icon-t-phone"></use>
@@ -304,7 +304,7 @@
 
     </div>
   </footer>
-  <script src="js/main-nav.js"></script>
+  <script src="js/main-nav.min.js"></script>
 </body>
 
 </html>
