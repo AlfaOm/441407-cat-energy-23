@@ -319,7 +319,8 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-.form__radio-input:hover + .form__radio-label::before {
+.form__radio-input:hover + .form__radio-label::before,
+.form__radio-input:focus + .form__radio-label::before {
   border-color: @radio-checkbox-hover;
 }
 
@@ -374,7 +375,8 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-.form__checkbox-input:hover + .form__checkbox-label::before {
+.form__checkbox-input:hover + .form__checkbox-label::before,
+.form__checkbox-input:focus + .form__checkbox-label::before {
   border-color: @radio-checkbox-hover;
 }
 

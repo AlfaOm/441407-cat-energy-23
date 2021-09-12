@@ -434,7 +434,8 @@
     border-bottom: 2px dotted @slide-toggle;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     @media (min-width: @tablet-width) {
       border-bottom: 2px solid @slide-toggle;
     }
@@ -573,7 +574,8 @@
       appearance: none;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       &::-webkit-slider-thumb {
         box-shadow: 0 0 0 1px @special-grey, 0 2px 4px 0 @sh-slide-hov;
       }
