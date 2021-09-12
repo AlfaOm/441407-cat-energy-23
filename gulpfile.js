@@ -141,7 +141,7 @@ exports.server = server;
 
 // Reload
 
-const reload = () => {
+const reload = (done) => {
   sync.reload();
   done();
 };
