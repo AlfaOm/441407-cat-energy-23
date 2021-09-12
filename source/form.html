@@ -10,6 +10,7 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -108,9 +109,7 @@
             кота)</legend>
           <div class="form__field-col-2">
             <p class="form__input-wrapper form__input-wrapper--email">
-              <label class="form__label" for="email-owner">
-                <nobr>E-mail</nobr>:*
-              </label>
+              <label class="form__label" for="email-owner">E&#8209;mail:*</label>
               <input class="form__input form__input--contact form__input-email" id="email-owner" type="email"
                 name="email" placeholder="kuklachev@gmail.com" required>
               <svg class="form__input-icon-email" width="19" height="14">
@@ -171,7 +170,7 @@
 
     <!-- Адрес и карта -->
 
-    <section class="address">
+    <div class="address">
       <div class="address__contacts-background">
         <div class="container address__contacts-container">
           <section class="address__contacts">
@@ -208,7 +207,7 @@
         </div>
       </section>
 
-    </section>
+    </div>
 
   </main>
 
@@ -228,7 +227,7 @@
           <li class="social__item social__item--vkontakte">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
-              <svg width="23" ; height="16" ;>
+              <svg width="23" height="16">
                 <use xlink:href="img/svg/sprite.svg#vk"></use>
               </svg>
             </a>
